@@ -34,7 +34,13 @@ Compiled source #
 ehthumbs.db
 Thumbs.db
 
-__pycache__/
+# Python # 
+*.pyc
+*.pyman
+*.pyo
+__pycache__
+.deps
+.libs
 .ipynb_checkpoints
 private.py
 
