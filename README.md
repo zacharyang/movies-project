@@ -3,7 +3,7 @@ In this project, I will be analysing movies on iTunes and other open movie datab
 
 ## Should I see this movie in the cinema or on iTunes? ## 
 
-![Deer Popcorn]('/images/giphy.gif')
+![Deer Popcorn](images/giphy.gif)
 
 I watch **a lot** of movies but I can't always afford to go to the movies and Netflix doesn't always have a good selection of the *latest* movies. So I've been watching more on Video On Demand (VOD) platforms such as [iTunes](https://itunes.apple.com/sg/genre/movies/id33), [Amazon Prime Video](https://www.primevideo.com/) or [Hooq](https://www.hooq.tv). 
 
