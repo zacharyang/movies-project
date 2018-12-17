@@ -3,7 +3,7 @@ In this project, I will be analysing movies on iTunes and other open movie datab
 
 ## Should I see this movie in the cinema or on iTunes? ## 
 
-![Deer Popcorn](https://gph.is/2cTd59b)
+![Deer Popcorn]('/images/giphy.gif')
 
 I watch **a lot** of movies but I can't always afford to go to the movies and Netflix doesn't always have a good selection of the *latest* movies. So I've been watching more on Video On Demand (VOD) platforms such as [iTunes](https://itunes.apple.com/sg/genre/movies/id33), [Amazon Prime Video](https://www.primevideo.com/) or [Hooq](https://www.hooq.tv). 
 
@@ -31,7 +31,7 @@ If you'd like to follow my data collection process, you can clone my repository 
 
 ## Exploration ## 
 
-Over the next few weeks, I'll be exploring the data and deciding on how I'd like to model the data. Check back for updates in [this repository](https://github.com/zacharyang/movies-project/data_exploration). 
+Over the next few weeks, I'll be exploring the data and deciding on how I'd like to model the data. Check back for updates in [this repository](https://github.com/zacharyang/movies-project/tree/master/data_exploration). 
 
 ## Model Training and Selection ## 
 
