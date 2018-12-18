@@ -9,7 +9,7 @@ I watch **a lot** of movies but I can't always afford to go to the movies and Ne
 
 So is it really *worth it* for me to wait for the DVD release? How can I predict the price a movie will be listed on iTunes? 
 
-**For a VOD provider, how can I predict the price of a movie of that a rival VOD provider would list at?**
+**For a VOD provider, how can I predict the price of a movie of that a rival VOD provider, like iTunes, would list at?**
 
 ## Data Collection ## 
 
@@ -31,7 +31,9 @@ If you'd like to follow my data collection process, you can clone my repository 
 
 ## Exploration ## 
 
-Over the next few weeks, I'll be exploring the data and deciding on how I'd like to model the data. Check back for updates in [this repository](https://github.com/zacharyang/movies-project/tree/master/data_exploration). 
+Over the next few weeks, I'll be exploring the data and deciding on how I'd like to model the data. Check out my [exploration on the iTunes movie dataset](https://github.com/zacharyang/movies-project/tree/master/data_exploration/exploring-itunes.ipynb)
+
+Check back for updates in [this repository](https://github.com/zacharyang/movies-project/tree/master/data_exploration). 
 
 ## Model Training and Selection ## 
 
