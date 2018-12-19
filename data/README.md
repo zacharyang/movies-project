@@ -32,7 +32,41 @@ This is a description of the major data fields that I'll be focusing on in my an
 
 <h2><a name="omdb"> Open Movie Database </a></h2>
 
-**Under Construction**
+The OMdb data has two main components. The search parameters contained in the OMdb_search_dat JSON file, which contain the keyword search strings and IMdb IDs used to query the OMdb API. Crucially, each search string and unique IMdb ID contains a corresponding unique iTunes ID, which will then be used to join the iTunes data and the OMdb data.
+
+The OMdb_data JSON file contains the results that have come back from the OMdb API. These contain information on the movie, including information on the cast, box office returns, critic ratings etc. 
+
+In my analysis, I'll be joining the two data files into a common dataframe. I've listed the definitions of most of the features below but please check in with the [OMdb API documentation](http://www.omdbapi.com/) for further reference.
+
+
+| Variable Name |  Type   |Description|
+| :----------:  | :-----: |:------------:|
+|     Actors   | String | List of actors credit to the movie separated by commas|
+|     Awards    | String | Description of number of awards and nominations for the movie|
+|     Country | String| List of countries that the movie is set in, separated by commas |
+|     DVD     | String | Date released on DVD |
+|     Director   |  String | List of actors credit to the movie separated by commas|
+|     IMdb_score    | Float| IMdb rating for the movie, ranging from 0 to 100|
+|    Language  | String | List of languages that the movie is released in, separated by commas |
+|     Metascore   | String | Metascore rating for the movie, ranging from 0 to 100 |
+|     Plot  |  String| Synopsis of the movie|
+|     Production     | Float | Production Studio that produced the movie |
+|     RT_score   | Float | Rotten Tomatoes rating for the movie, ranging from 0 to 100 |
+|     Title    | String | Movie Title |
+|     imdbVotes   |  Float | Number of votes on IMdb|
+|     Runtime     | String | Run Time of movie in minutes|
+|     Year  | String | Year of Release |
+|     actor_1   | String | First credited actor in the "Actors" column. Parsed out in `collect_data.py` |
+|     actor_2    | Float | Second credited actor in the "Actors" column. Parsed out in `collect_data.py` |
+|     num_actor   |  Float | Number of actors credited |
+|     director_1      | String | First credited Director in the "Director" column. Parsed out in `collect_data.py`|
+|     director_2  | String | Second credited Director in the "Director" column. Parsed out in `collect_data.py` |
+|     num_director   | Float | Number of directors credited |
+|     IMdb_ID  |  String | Unique IMdb ID taking the form of "tt" + 9-digit string|
+|     TMdb_ID     | String | Possible TMdb IDs obtained from TMdb API queries. Could be a string or a single unique ID|
+|     iTunes_ID    | String | Unique iTunes ID as listed on iTunes Store|
+|     search_strs      | String | Movie Title transformed to pass through a search string, eg. "Field+of+Dreams"|
+
 
 <h2><a name="mojo"> Box Office Mojo </a></h2>
 
