@@ -27,13 +27,13 @@ If you'd like to follow my data collection process, you can clone my repository 
 1.	Obtain the OMdb and TMdb API keys from their websites.
 2.	Create a file in your local repo, `private.py` that contains two keys as `TMDB_API_KEY="yourkeyhere"` and `OMDB_API_KEY='yourkeyhere'`.
 3.	Tweak `settings.py` to set up your data collection parameters.
-4.	Run the `collect_data` script! 
+4.	Run the `collect_data.py` script! 
 
 ## Exploration ## 
 
-Over the next few weeks, I'll be exploring the data and deciding on how I'd like to model the data. Check out my [exploration on the iTunes movie dataset](https://github.com/zacharyang/movies-project/tree/master/data_exploration/exploring-itunes.ipynb)
+Over the next few weeks, I'll be exploring the data and deciding on how I'd like to model the data. Check out my [exploration on the iTunes movie dataset](https://github.com/zacharyang/movies-project/tree/master/data_exploration/exploring-itunes.ipynb) and on the [OMdb movie dataset](https://github.com/zacharyang/movies-project/blob/master/data_exploration/exploring_omdb.ipynb). 
 
-Check back for updates in [this repository](https://github.com/zacharyang/movies-project/tree/master/data_exploration). 
+Check back for more updates in [this repository](https://github.com/zacharyang/movies-project/tree/master/data_exploration). 
 
 ## Model Training and Selection ## 
 
