@@ -70,5 +70,15 @@ In my analysis, I'll be joining the two data files into a common dataframe. I've
 
 <h2><a name="mojo"> Box Office Mojo </a></h2>
 
-**Under Construction**
+Box Office information is obtained from respective movies by scraping [Box Office Mojo](https://www.boxofficemojo.com/alltime/), after discovering a bunch of missing data in the OMdb data. You can look at how I collected the data in [this script](https://github.com/zacharyang/movies-project/blob/master/collect_box_office.py).
+
+| Variable Name |  Type   |Description|
+| :----------:  | :-----: |:------------:|
+| worldwide-gross| Float | Worldwide box office earnings, obtained from [Box Office Mojo](https://www.boxofficemojo.com)|
+| domestic-gross | Float | US box office earnings, obtained from [Box Office Mojo](https://www.boxofficemojo.com)|
+| overseas-gross | Float | Overseas box office earnings, obtained from [Box Office Mojo](https://www.boxofficemojo.com)|
+| domestic-pct | Float | % of total earnings coming from US box office earnings|
+| overseas-pct | Float | % of total earnings coming from overseas box office earnings| 
+| years | Integer | Year of release, according to Box Office Mojo|
+| mojo_title| String | Title of movie, according to Box Office Mojo|
 

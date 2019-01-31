@@ -1,5 +1,5 @@
 import requests as rq
-import regex as re
+import re
 import json
 import settings 
 from bs4 import BeautifulSoup

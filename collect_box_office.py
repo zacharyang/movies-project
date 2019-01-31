@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests as rq
-import regex as re
-import bs4
+import re
 import pandas as pd
 import numpy as np
 
@@ -58,35 +57,6 @@ def scrape():
 
     main.to_csv('./data/annual_mojo.csv')
 
-
-def google_for_mojo(df):
-"""
-    Trying to get an IMdb ID for every movie in mojo's data
-
-"""
-    df['IMdb_id']=np.nan
-    successful_hits=0
-    no_hits=0
-    for a in df.index:
-        print(str(a)+' movies googled')
-        # Google 'Movie Name' + 'imdb' using BS#
-        r=rq.get('https://www.google.com/search?q=%s+%s+imdb'% (df['search_strs'][a],df['bo_year'][a] )) 
-        p= BeautifulSoup(r.text,'html.parser')
-        
-        # Take the first search result hyper link # 
-        
-        try:
-            first_google_hit=p.find_all('h3', {'class':'r'})[0] 
-            m=re.search('title/(.+?)/&',str(first_google_hit))
-            IMDB_id=m.group(1)
-            df['IMdb_id'][a]=IMDB_id
-            successful_hits+=1
-        except:
-            no_hits+=1
-    
-    print('Successful IMDB_ids found via Google = ' + str(successful_hits) + ' No results = '+ str(no_hits))
-
-    return df
     
 if __name__ == "__main__": 
 
